@@ -1,103 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="24" total="52" passed="28" failed="0" skipped="0">
+<testng-results ignored="39" total="66" passed="27" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-06T14:50:06 IST" name="Suite" finished-at="2024-02-06T14:50:44 IST" duration-ms="37958">
+  <suite started-at="2024-02-06T16:40:34 IST" name="Suite" finished-at="2024-02-06T16:41:20 IST" duration-ms="46258">
     <groups>
       <group name="Scenario2">
-        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@6b6776cb]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
-        <method signature="HomeTest.verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@28b46423]" name="verifyTopmenuAndSidemenu" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5d99c6b5]" name="validateTitleofPage" class="testclasses.LoginTest"/>
-        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@6b6776cb]" name="verifyCheckout" class="testclasses.CartTest"/>
-        <method signature="CheckoutTest.proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@544d57e]" name="proceedToCheckout" class="testclasses.CheckoutTest"/>
-        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@5d99c6b5]" name="verifyLogin" class="testclasses.LoginTest"/>
-        <method signature="CheckoutTest.VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@544d57e]" name="VerifyPaymentSummery" class="testclasses.CheckoutTest"/>
-        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@b83a9be]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
-        <method signature="HomeTest.verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@4032d386]" name="verifyTopmenuAndSidemenu" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5c669da8]" name="validateTitleofPage" class="testclasses.LoginTest"/>
-        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@b83a9be]" name="verifyCheckout" class="testclasses.CartTest"/>
-        <method signature="CheckoutTest.proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@563e4951]" name="proceedToCheckout" class="testclasses.CheckoutTest"/>
-        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@5c669da8]" name="verifyLogin" class="testclasses.LoginTest"/>
-        <method signature="CheckoutTest.VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@563e4951]" name="VerifyPaymentSummery" class="testclasses.CheckoutTest"/>
+        <method signature="CartTest.changeProductQty()[pri:0, instance:testclasses.CartTest@27e47833]" name="changeProductQty" class="testclasses.CartTest"/>
+        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@27e47833]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
+        <method signature="HomeTest.verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@797b0699]" name="verifyTopmenuAndSidemenu" class="testclasses.HomeTest"/>
+        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@7fc4780b]" name="validateTitleofPage" class="testclasses.LoginTest"/>
+        <method signature="ProductListTest.howeringOnBlueandGreenSneaker()[pri:1, instance:testclasses.ProductListTest@4a3631f8]" name="howeringOnBlueandGreenSneaker" class="testclasses.ProductListTest"/>
+        <method signature="ProductTest.ChooseGreenColor()[pri:1, instance:testclasses.ProductTest@52e7a6b2]" name="ChooseGreenColor" class="testclasses.ProductTest"/>
+        <method signature="WishListTest.verifyProductAddedtoCartFromWL()[pri:1, instance:testclasses.WishListTest@2d9caaeb]" name="verifyProductAddedtoCartFromWL" class="testclasses.WishListTest"/>
+        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@27e47833]" name="verifyCheckout" class="testclasses.CartTest"/>
+        <method signature="CheckoutTest.proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@4f704591]" name="proceedToCheckout" class="testclasses.CheckoutTest"/>
+        <method signature="HomeTest.clickingOnAPPARELandSHOES()[pri:2, instance:testclasses.HomeTest@797b0699]" name="clickingOnAPPARELandSHOES" class="testclasses.HomeTest"/>
+        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@7fc4780b]" name="verifyLogin" class="testclasses.LoginTest"/>
+        <method signature="ProductTest.verifyWishList()[pri:2, instance:testclasses.ProductTest@52e7a6b2]" name="verifyWishList" class="testclasses.ProductTest"/>
+        <method signature="CheckoutTest.VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@4f704591]" name="VerifyPaymentSummery" class="testclasses.CheckoutTest"/>
+        <method signature="CheckoutTest.verifyOrderConfirm()[pri:4, instance:testclasses.CheckoutTest@4f704591]" name="verifyOrderConfirm" class="testclasses.CheckoutTest"/>
+        <method signature="CartTest.changeProductQty()[pri:0, instance:testclasses.CartTest@4e31276e]" name="changeProductQty" class="testclasses.CartTest"/>
+        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@4e31276e]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
+        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@3eb81efb]" name="validateTitleofPage" class="testclasses.LoginTest"/>
+        <method signature="ProductListTest.howeringOnBlueandGreenSneaker()[pri:1, instance:testclasses.ProductListTest@6d026701]" name="howeringOnBlueandGreenSneaker" class="testclasses.ProductListTest"/>
+        <method signature="ProductTest.ChooseGreenColor()[pri:1, instance:testclasses.ProductTest@35399441]" name="ChooseGreenColor" class="testclasses.ProductTest"/>
+        <method signature="WishListTest.verifyProductAddedtoCartFromWL()[pri:1, instance:testclasses.WishListTest@5170bcf4]" name="verifyProductAddedtoCartFromWL" class="testclasses.WishListTest"/>
+        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@4e31276e]" name="verifyCheckout" class="testclasses.CartTest"/>
+        <method signature="CheckoutTest.proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@198d6542]" name="proceedToCheckout" class="testclasses.CheckoutTest"/>
+        <method signature="HomeTest.clickingOnAPPARELandSHOES()[pri:2, instance:testclasses.HomeTest@7d3d101b]" name="clickingOnAPPARELandSHOES" class="testclasses.HomeTest"/>
+        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@3eb81efb]" name="verifyLogin" class="testclasses.LoginTest"/>
+        <method signature="ProductTest.verifyWishList()[pri:2, instance:testclasses.ProductTest@35399441]" name="verifyWishList" class="testclasses.ProductTest"/>
+        <method signature="CheckoutTest.VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@198d6542]" name="VerifyPaymentSummery" class="testclasses.CheckoutTest"/>
+        <method signature="CheckoutTest.verifyOrderConfirm()[pri:4, instance:testclasses.CheckoutTest@198d6542]" name="verifyOrderConfirm" class="testclasses.CheckoutTest"/>
       </group> <!-- Scenario2 -->
       <group name="Scenario1">
-        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@6b6776cb]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
-        <method signature="HomeTest.selectProduct()[pri:1, instance:testclasses.HomeTest@28b46423]" name="selectProduct" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5d99c6b5]" name="validateTitleofPage" class="testclasses.LoginTest"/>
-        <method signature="ProductTest.verifyAddToCart()[pri:1, instance:testclasses.ProductTest@48c76607]" name="verifyAddToCart" class="testclasses.ProductTest"/>
-        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@6b6776cb]" name="verifyCheckout" class="testclasses.CartTest"/>
-        <method signature="HomeTest.validateTitleofPage()[pri:2, instance:testclasses.HomeTest@28b46423]" name="validateTitleofPage" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@5d99c6b5]" name="verifyLogin" class="testclasses.LoginTest"/>
-        <method signature="ProductTest.validateTitleofPage()[pri:2, instance:testclasses.ProductTest@48c76607]" name="validateTitleofPage" class="testclasses.ProductTest"/>
-        <method signature="CartTest.validateTitleofPage()[pri:3, instance:testclasses.CartTest@6b6776cb]" name="validateTitleofPage" class="testclasses.CartTest"/>
-        <method signature="HomeTest.verifyAddToCartClick()[pri:3, instance:testclasses.HomeTest@28b46423]" name="verifyAddToCartClick" class="testclasses.HomeTest"/>
-        <method signature="ProductTest.verifyNavigation()[pri:3, instance:testclasses.ProductTest@48c76607]" name="verifyNavigation" class="testclasses.ProductTest"/>
-        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@b83a9be]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
-        <method signature="HomeTest.selectProduct()[pri:1, instance:testclasses.HomeTest@4032d386]" name="selectProduct" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5c669da8]" name="validateTitleofPage" class="testclasses.LoginTest"/>
-        <method signature="ProductTest.verifyAddToCart()[pri:1, instance:testclasses.ProductTest@55cf0d14]" name="verifyAddToCart" class="testclasses.ProductTest"/>
-        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@b83a9be]" name="verifyCheckout" class="testclasses.CartTest"/>
-        <method signature="HomeTest.validateTitleofPage()[pri:2, instance:testclasses.HomeTest@4032d386]" name="validateTitleofPage" class="testclasses.HomeTest"/>
-        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@5c669da8]" name="verifyLogin" class="testclasses.LoginTest"/>
-        <method signature="ProductTest.validateTitleofPage()[pri:2, instance:testclasses.ProductTest@55cf0d14]" name="validateTitleofPage" class="testclasses.ProductTest"/>
-        <method signature="CartTest.validateTitleofPage()[pri:3, instance:testclasses.CartTest@b83a9be]" name="validateTitleofPage" class="testclasses.CartTest"/>
-        <method signature="HomeTest.verifyAddToCartClick()[pri:3, instance:testclasses.HomeTest@4032d386]" name="verifyAddToCartClick" class="testclasses.HomeTest"/>
-        <method signature="ProductTest.verifyNavigation()[pri:3, instance:testclasses.ProductTest@55cf0d14]" name="verifyNavigation" class="testclasses.ProductTest"/>
+        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@27e47833]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
+        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@7fc4780b]" name="validateTitleofPage" class="testclasses.LoginTest"/>
+        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@27e47833]" name="verifyCheckout" class="testclasses.CartTest"/>
+        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@7fc4780b]" name="verifyLogin" class="testclasses.LoginTest"/>
+        <method signature="CartTest.acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@4e31276e]" name="acceptTAndCCheckbox" class="testclasses.CartTest"/>
+        <method signature="LoginTest.validateTitleofPage()[pri:1, instance:testclasses.LoginTest@3eb81efb]" name="validateTitleofPage" class="testclasses.LoginTest"/>
+        <method signature="CartTest.verifyCheckout()[pri:2, instance:testclasses.CartTest@4e31276e]" name="verifyCheckout" class="testclasses.CartTest"/>
+        <method signature="LoginTest.verifyLogin()[pri:2, instance:testclasses.LoginTest@3eb81efb]" name="verifyLogin" class="testclasses.LoginTest"/>
       </group> <!-- Scenario1 -->
     </groups>
-    <test started-at="2024-02-06T14:50:06 IST" name="ChromeTest" finished-at="2024-02-06T14:50:24 IST" duration-ms="18046">
+    <test started-at="2024-02-06T16:40:34 IST" name="ChromeTest" finished-at="2024-02-06T16:40:55 IST" duration-ms="21413">
       <class name="testclasses.CheckoutTest">
-        <test-method signature="proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@544d57e]" started-at="2024-02-06T14:50:21 IST" name="proceedToCheckout" finished-at="2024-02-06T14:50:24 IST" duration-ms="2559" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CheckoutTest@4f704591]" started-at="2024-02-06T16:40:50 IST" name="createObject" finished-at="2024-02-06T16:40:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@4f704591]" started-at="2024-02-06T16:40:50 IST" name="proceedToCheckout" finished-at="2024-02-06T16:40:52 IST" duration-ms="2473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedToCheckout -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CheckoutTest@544d57e]" started-at="2024-02-06T14:50:21 IST" name="createObject" finished-at="2024-02-06T14:50:21 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@544d57e]" started-at="2024-02-06T14:50:24 IST" name="VerifyPaymentSummery" finished-at="2024-02-06T14:50:24 IST" duration-ms="1" status="PASS">
+        <test-method signature="VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@4f704591]" started-at="2024-02-06T16:40:52 IST" name="VerifyPaymentSummery" finished-at="2024-02-06T16:40:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPaymentSummery -->
+        <test-method signature="verifyOrderConfirm()[pri:4, instance:testclasses.CheckoutTest@4f704591]" started-at="2024-02-06T16:40:52 IST" name="verifyOrderConfirm" finished-at="2024-02-06T16:40:55 IST" duration-ms="2811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderConfirm -->
       </class> <!-- testclasses.CheckoutTest -->
       <class name="testclasses.CartTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CartTest@6b6776cb]" started-at="2024-02-06T14:50:20 IST" name="createObject" finished-at="2024-02-06T14:50:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CartTest@27e47833]" started-at="2024-02-06T16:40:48 IST" name="createObject" finished-at="2024-02-06T16:40:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@6b6776cb]" started-at="2024-02-06T14:50:20 IST" name="acceptTAndCCheckbox" finished-at="2024-02-06T14:50:20 IST" duration-ms="65" status="PASS">
+        <test-method signature="changeProductQty()[pri:0, instance:testclasses.CartTest@27e47833]" started-at="2024-02-06T16:40:48 IST" name="changeProductQty" finished-at="2024-02-06T16:40:48 IST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeProductQty -->
+        <test-method signature="acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@27e47833]" started-at="2024-02-06T16:40:48 IST" name="acceptTAndCCheckbox" finished-at="2024-02-06T16:40:49 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptTAndCCheckbox -->
-        <test-method signature="verifyCheckout()[pri:2, instance:testclasses.CartTest@6b6776cb]" started-at="2024-02-06T14:50:20 IST" name="verifyCheckout" finished-at="2024-02-06T14:50:21 IST" duration-ms="1149" status="PASS">
+        <test-method signature="verifyCheckout()[pri:2, instance:testclasses.CartTest@27e47833]" started-at="2024-02-06T16:40:49 IST" name="verifyCheckout" finished-at="2024-02-06T16:40:50 IST" duration-ms="1198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckout -->
-        <test-method signature="validateTitleofPage()[pri:3, instance:testclasses.CartTest@6b6776cb]" started-at="2024-02-06T14:50:21 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:21 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
       </class> <!-- testclasses.CartTest -->
       <class name="testclasses.ProductTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductTest@48c76607]" started-at="2024-02-06T14:50:17 IST" name="createObject" finished-at="2024-02-06T14:50:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductTest@52e7a6b2]" started-at="2024-02-06T16:40:46 IST" name="createObject" finished-at="2024-02-06T16:40:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="verifyAddToCart()[pri:1, instance:testclasses.ProductTest@48c76607]" started-at="2024-02-06T14:50:17 IST" name="verifyAddToCart" finished-at="2024-02-06T14:50:19 IST" duration-ms="2302" status="PASS">
+        <test-method signature="ChooseGreenColor()[pri:1, instance:testclasses.ProductTest@52e7a6b2]" started-at="2024-02-06T16:40:46 IST" name="ChooseGreenColor" finished-at="2024-02-06T16:40:46 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method signature="validateTitleofPage()[pri:2, instance:testclasses.ProductTest@48c76607]" started-at="2024-02-06T14:50:19 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:19 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- ChooseGreenColor -->
+        <test-method signature="verifyWishList()[pri:2, instance:testclasses.ProductTest@52e7a6b2]" started-at="2024-02-06T16:40:46 IST" name="verifyWishList" finished-at="2024-02-06T16:40:47 IST" duration-ms="1074" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyNavigation()[pri:3, instance:testclasses.ProductTest@48c76607]" started-at="2024-02-06T14:50:19 IST" name="verifyNavigation" finished-at="2024-02-06T14:50:20 IST" duration-ms="706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigation -->
+        </test-method> <!-- verifyWishList -->
       </class> <!-- testclasses.ProductTest -->
+      <class name="testclasses.ProductListTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductListTest@4a3631f8]" started-at="2024-02-06T16:40:43 IST" name="createObject" finished-at="2024-02-06T16:40:43 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="howeringOnBlueandGreenSneaker()[pri:1, instance:testclasses.ProductListTest@4a3631f8]" started-at="2024-02-06T16:40:43 IST" name="howeringOnBlueandGreenSneaker" finished-at="2024-02-06T16:40:46 IST" duration-ms="2700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- howeringOnBlueandGreenSneaker -->
+      </class> <!-- testclasses.ProductListTest -->
       <class name="testclasses.LoginTest">
-        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:testclasses.LoginTest@5d99c6b5]" started-at="2024-02-06T14:50:06 IST" name="initBrowser" finished-at="2024-02-06T14:50:14 IST" duration-ms="7899" status="PASS">
+        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:testclasses.LoginTest@7fc4780b]" started-at="2024-02-06T16:40:34 IST" name="initBrowser" finished-at="2024-02-06T16:40:41 IST" duration-ms="6767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,99 +117,111 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@5d99c6b5]" started-at="2024-02-06T14:50:14 IST" name="createObject" finished-at="2024-02-06T14:50:14 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@7fc4780b]" started-at="2024-02-06T16:40:41 IST" name="createObject" finished-at="2024-02-06T16:40:41 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5d99c6b5]" started-at="2024-02-06T14:50:14 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:14 IST" duration-ms="12" status="PASS">
+        <test-method signature="validateTitleofPage()[pri:1, instance:testclasses.LoginTest@7fc4780b]" started-at="2024-02-06T16:40:41 IST" name="validateTitleofPage" finished-at="2024-02-06T16:40:41 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyLogin()[pri:2, instance:testclasses.LoginTest@5d99c6b5]" started-at="2024-02-06T14:50:14 IST" name="verifyLogin" finished-at="2024-02-06T14:50:15 IST" duration-ms="1791" status="PASS">
+        <test-method signature="verifyLogin()[pri:2, instance:testclasses.LoginTest@7fc4780b]" started-at="2024-02-06T16:40:41 IST" name="verifyLogin" finished-at="2024-02-06T16:40:42 IST" duration-ms="1727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.LoginTest@5d99c6b5]" started-at="2024-02-06T14:50:24 IST" name="tearDown" finished-at="2024-02-06T14:50:24 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.LoginTest@7fc4780b]" started-at="2024-02-06T16:40:55 IST" name="tearDown" finished-at="2024-02-06T16:40:55 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testclasses.LoginTest -->
       <class name="testclasses.HomeTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.HomeTest@28b46423]" started-at="2024-02-06T14:50:15 IST" name="createObject" finished-at="2024-02-06T14:50:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.HomeTest@797b0699]" started-at="2024-02-06T16:40:42 IST" name="createObject" finished-at="2024-02-06T16:40:42 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="selectProduct()[pri:1, instance:testclasses.HomeTest@28b46423]" started-at="2024-02-06T14:50:15 IST" name="selectProduct" finished-at="2024-02-06T14:50:17 IST" duration-ms="1148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectProduct -->
-        <test-method signature="verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@28b46423]" started-at="2024-02-06T14:50:17 IST" name="verifyTopmenuAndSidemenu" finished-at="2024-02-06T14:50:17 IST" duration-ms="148" status="PASS">
+        <test-method signature="verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@797b0699]" started-at="2024-02-06T16:40:42 IST" name="verifyTopmenuAndSidemenu" finished-at="2024-02-06T16:40:42 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTopmenuAndSidemenu -->
-        <test-method signature="validateTitleofPage()[pri:2, instance:testclasses.HomeTest@28b46423]" started-at="2024-02-06T14:50:17 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:17 IST" duration-ms="7" status="PASS">
+        <test-method signature="clickingOnAPPARELandSHOES()[pri:2, instance:testclasses.HomeTest@797b0699]" started-at="2024-02-06T16:40:42 IST" name="clickingOnAPPARELandSHOES" finished-at="2024-02-06T16:40:43 IST" duration-ms="692" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyAddToCartClick()[pri:3, instance:testclasses.HomeTest@28b46423]" started-at="2024-02-06T14:50:17 IST" name="verifyAddToCartClick" finished-at="2024-02-06T14:50:17 IST" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCartClick -->
+        </test-method> <!-- clickingOnAPPARELandSHOES -->
       </class> <!-- testclasses.HomeTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2024-02-06T14:50:24 IST" name="FirefoxTest" finished-at="2024-02-06T14:50:44 IST" duration-ms="19879">
-      <class name="testclasses.CheckoutTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CheckoutTest@563e4951]" started-at="2024-02-06T14:50:40 IST" name="createObject" finished-at="2024-02-06T14:50:40 IST" duration-ms="2" status="PASS">
+      <class name="testclasses.WishListTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.WishListTest@2d9caaeb]" started-at="2024-02-06T16:40:47 IST" name="createObject" finished-at="2024-02-06T16:40:47 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@563e4951]" started-at="2024-02-06T14:50:40 IST" name="proceedToCheckout" finished-at="2024-02-06T14:50:43 IST" duration-ms="2859" status="PASS">
+        <test-method signature="verifyProductAddedtoCartFromWL()[pri:1, instance:testclasses.WishListTest@2d9caaeb]" started-at="2024-02-06T16:40:47 IST" name="verifyProductAddedtoCartFromWL" finished-at="2024-02-06T16:40:48 IST" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedtoCartFromWL -->
+      </class> <!-- testclasses.WishListTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-02-06T16:40:55 IST" name="FirefoxTest" finished-at="2024-02-06T16:41:20 IST" duration-ms="24808">
+      <class name="testclasses.CheckoutTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CheckoutTest@198d6542]" started-at="2024-02-06T16:41:14 IST" name="createObject" finished-at="2024-02-06T16:41:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="proceedToCheckout()[pri:2, instance:testclasses.CheckoutTest@198d6542]" started-at="2024-02-06T16:41:14 IST" name="proceedToCheckout" finished-at="2024-02-06T16:41:16 IST" duration-ms="2776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedToCheckout -->
-        <test-method signature="VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@563e4951]" started-at="2024-02-06T14:50:43 IST" name="VerifyPaymentSummery" finished-at="2024-02-06T14:50:43 IST" duration-ms="1" status="PASS">
+        <test-method signature="VerifyPaymentSummery()[pri:3, instance:testclasses.CheckoutTest@198d6542]" started-at="2024-02-06T16:41:16 IST" name="VerifyPaymentSummery" finished-at="2024-02-06T16:41:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPaymentSummery -->
+        <test-method signature="verifyOrderConfirm()[pri:4, instance:testclasses.CheckoutTest@198d6542]" started-at="2024-02-06T16:41:16 IST" name="verifyOrderConfirm" finished-at="2024-02-06T16:41:19 IST" duration-ms="2823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderConfirm -->
       </class> <!-- testclasses.CheckoutTest -->
       <class name="testclasses.CartTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CartTest@b83a9be]" started-at="2024-02-06T14:50:39 IST" name="createObject" finished-at="2024-02-06T14:50:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.CartTest@4e31276e]" started-at="2024-02-06T16:41:12 IST" name="createObject" finished-at="2024-02-06T16:41:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@b83a9be]" started-at="2024-02-06T14:50:39 IST" name="acceptTAndCCheckbox" finished-at="2024-02-06T14:50:39 IST" duration-ms="234" status="PASS">
+        <test-method signature="changeProductQty()[pri:0, instance:testclasses.CartTest@4e31276e]" started-at="2024-02-06T16:41:12 IST" name="changeProductQty" finished-at="2024-02-06T16:41:12 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeProductQty -->
+        <test-method signature="acceptTAndCCheckbox()[pri:1, instance:testclasses.CartTest@4e31276e]" started-at="2024-02-06T16:41:12 IST" name="acceptTAndCCheckbox" finished-at="2024-02-06T16:41:12 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptTAndCCheckbox -->
-        <test-method signature="verifyCheckout()[pri:2, instance:testclasses.CartTest@b83a9be]" started-at="2024-02-06T14:50:39 IST" name="verifyCheckout" finished-at="2024-02-06T14:50:40 IST" duration-ms="1126" status="PASS">
+        <test-method signature="verifyCheckout()[pri:2, instance:testclasses.CartTest@4e31276e]" started-at="2024-02-06T16:41:12 IST" name="verifyCheckout" finished-at="2024-02-06T16:41:14 IST" duration-ms="1179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckout -->
-        <test-method signature="validateTitleofPage()[pri:3, instance:testclasses.CartTest@b83a9be]" started-at="2024-02-06T14:50:40 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:40 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
       </class> <!-- testclasses.CartTest -->
       <class name="testclasses.ProductTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductTest@55cf0d14]" started-at="2024-02-06T14:50:36 IST" name="createObject" finished-at="2024-02-06T14:50:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductTest@35399441]" started-at="2024-02-06T16:41:09 IST" name="createObject" finished-at="2024-02-06T16:41:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="verifyAddToCart()[pri:1, instance:testclasses.ProductTest@55cf0d14]" started-at="2024-02-06T14:50:36 IST" name="verifyAddToCart" finished-at="2024-02-06T14:50:37 IST" duration-ms="796" status="PASS">
+        <test-method signature="ChooseGreenColor()[pri:1, instance:testclasses.ProductTest@35399441]" started-at="2024-02-06T16:41:09 IST" name="ChooseGreenColor" finished-at="2024-02-06T16:41:09 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method signature="validateTitleofPage()[pri:2, instance:testclasses.ProductTest@55cf0d14]" started-at="2024-02-06T14:50:37 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:37 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- ChooseGreenColor -->
+        <test-method signature="verifyWishList()[pri:2, instance:testclasses.ProductTest@35399441]" started-at="2024-02-06T16:41:09 IST" name="verifyWishList" finished-at="2024-02-06T16:41:11 IST" duration-ms="1404" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyNavigation()[pri:3, instance:testclasses.ProductTest@55cf0d14]" started-at="2024-02-06T14:50:37 IST" name="verifyNavigation" finished-at="2024-02-06T14:50:39 IST" duration-ms="1607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigation -->
+        </test-method> <!-- verifyWishList -->
       </class> <!-- testclasses.ProductTest -->
+      <class name="testclasses.ProductListTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.ProductListTest@6d026701]" started-at="2024-02-06T16:41:06 IST" name="createObject" finished-at="2024-02-06T16:41:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="howeringOnBlueandGreenSneaker()[pri:1, instance:testclasses.ProductListTest@6d026701]" started-at="2024-02-06T16:41:06 IST" name="howeringOnBlueandGreenSneaker" finished-at="2024-02-06T16:41:09 IST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- howeringOnBlueandGreenSneaker -->
+      </class> <!-- testclasses.ProductListTest -->
       <class name="testclasses.LoginTest">
-        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:testclasses.LoginTest@5c669da8]" started-at="2024-02-06T14:50:24 IST" name="initBrowser" finished-at="2024-02-06T14:50:32 IST" duration-ms="8571" status="PASS">
+        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:testclasses.LoginTest@3eb81efb]" started-at="2024-02-06T16:40:55 IST" name="initBrowser" finished-at="2024-02-06T16:41:05 IST" duration-ms="9355" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,45 +232,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@5c669da8]" started-at="2024-02-06T14:50:32 IST" name="createObject" finished-at="2024-02-06T14:50:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@3eb81efb]" started-at="2024-02-06T16:41:05 IST" name="createObject" finished-at="2024-02-06T16:41:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="validateTitleofPage()[pri:1, instance:testclasses.LoginTest@5c669da8]" started-at="2024-02-06T14:50:32 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:32 IST" duration-ms="4" status="PASS">
+        <test-method signature="validateTitleofPage()[pri:1, instance:testclasses.LoginTest@3eb81efb]" started-at="2024-02-06T16:41:05 IST" name="validateTitleofPage" finished-at="2024-02-06T16:41:05 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyLogin()[pri:2, instance:testclasses.LoginTest@5c669da8]" started-at="2024-02-06T14:50:32 IST" name="verifyLogin" finished-at="2024-02-06T14:50:34 IST" duration-ms="1439" status="PASS">
+        <test-method signature="verifyLogin()[pri:2, instance:testclasses.LoginTest@3eb81efb]" started-at="2024-02-06T16:41:05 IST" name="verifyLogin" finished-at="2024-02-06T16:41:06 IST" duration-ms="1083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.LoginTest@5c669da8]" started-at="2024-02-06T14:50:43 IST" name="tearDown" finished-at="2024-02-06T14:50:44 IST" duration-ms="755" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.LoginTest@3eb81efb]" started-at="2024-02-06T16:41:19 IST" name="tearDown" finished-at="2024-02-06T16:41:20 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testclasses.LoginTest -->
       <class name="testclasses.HomeTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.HomeTest@4032d386]" started-at="2024-02-06T14:50:34 IST" name="createObject" finished-at="2024-02-06T14:50:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.HomeTest@7d3d101b]" started-at="2024-02-06T16:41:06 IST" name="createObject" finished-at="2024-02-06T16:41:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="selectProduct()[pri:1, instance:testclasses.HomeTest@4032d386]" started-at="2024-02-06T14:50:34 IST" name="selectProduct" finished-at="2024-02-06T14:50:35 IST" duration-ms="1251" status="PASS">
+        <test-method signature="clickingOnAPPARELandSHOES()[pri:2, instance:testclasses.HomeTest@7d3d101b]" started-at="2024-02-06T16:41:06 IST" name="clickingOnAPPARELandSHOES" finished-at="2024-02-06T16:41:06 IST" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectProduct -->
-        <test-method signature="verifyTopmenuAndSidemenu()[pri:1, instance:testclasses.HomeTest@4032d386]" started-at="2024-02-06T14:50:35 IST" name="verifyTopmenuAndSidemenu" finished-at="2024-02-06T14:50:35 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTopmenuAndSidemenu -->
-        <test-method signature="validateTitleofPage()[pri:2, instance:testclasses.HomeTest@4032d386]" started-at="2024-02-06T14:50:35 IST" name="validateTitleofPage" finished-at="2024-02-06T14:50:35 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitleofPage -->
-        <test-method signature="verifyAddToCartClick()[pri:3, instance:testclasses.HomeTest@4032d386]" started-at="2024-02-06T14:50:35 IST" name="verifyAddToCartClick" finished-at="2024-02-06T14:50:36 IST" duration-ms="1139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCartClick -->
+        </test-method> <!-- clickingOnAPPARELandSHOES -->
       </class> <!-- testclasses.HomeTest -->
+      <class name="testclasses.WishListTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.WishListTest@5170bcf4]" started-at="2024-02-06T16:41:11 IST" name="createObject" finished-at="2024-02-06T16:41:11 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="verifyProductAddedtoCartFromWL()[pri:1, instance:testclasses.WishListTest@5170bcf4]" started-at="2024-02-06T16:41:11 IST" name="verifyProductAddedtoCartFromWL" finished-at="2024-02-06T16:41:12 IST" duration-ms="1080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedtoCartFromWL -->
+      </class> <!-- testclasses.WishListTest -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

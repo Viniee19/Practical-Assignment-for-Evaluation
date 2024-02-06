@@ -27,6 +27,12 @@ public class CheckoutPage {
 	private WebElement continue_4 ; 
 	@FindBy(xpath = "//*[@onclick='PaymentInfo.save()']")
 	private WebElement continue_5 ; 
+	@FindBy(xpath = "//*[@onclick='ConfirmOrder.save()']")
+	private WebElement confirmButton ; 
+	@FindBy(xpath = "//*[text()='Your order has been successfully processed!']")
+	private WebElement orderConfirmedContent ;
+	@FindBy(xpath = "//*[text()='Log out']")
+	private WebElement logoutLink ;
 	
 	public CheckoutPage(WebDriver driver) {
 		this.driver= driver;
@@ -45,12 +51,24 @@ public class CheckoutPage {
 		wait.waitForVisibility(driver, continue_4, 10);
 		continue_4.click();
 		wait.waitForVisibility(driver, continue_5, 10);
-		continue_5.click();
+		continue_5.click();	
 	}
 	
 	public void verifyProductNameAndPrice() {
 		
 	}
+	
+    public boolean confirmOrder() {
+		wait =new ExplicitWait();
+    	wait.waitForVisibility(driver, confirmButton, 10);
+		confirmButton.click();	
+    	wait.waitForVisibility(driver, orderConfirmedContent, 10);
+    	boolean ispresent=orderConfirmedContent.isDisplayed();
+    	logoutLink.click();
+    	return ispresent;		
+	}
+    
+	
 	
 	
 

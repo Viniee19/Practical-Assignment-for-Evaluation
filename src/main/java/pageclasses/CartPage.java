@@ -25,6 +25,8 @@ public class CartPage {
 	@FindBy(xpath = "//*[contains(@name,'itemquantity')]")
 	private WebElement qtyBox;
 	
+	@FindBy(xpath = "//*[@name='updatecart']")
+	private WebElement updateCartButton;
 	
 	public CartPage(WebDriver driver) {
 		this.driver= driver;
@@ -52,7 +54,9 @@ public class CartPage {
 		wait.waitForVisibility(driver,qtyBox, 10);
 		qtyBox.clear();
 		qtyBox.sendKeys("5");
+		updateCartButton.click();
 	}
+	
 	
 	
 

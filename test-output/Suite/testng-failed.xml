@@ -6,6 +6,7 @@
     <classes>
       <class name="testclasses.CheckoutTest">
         <methods>
+          <include name="verifyOrderConfirm"/>
           <include name="initBrowser"/>
           <include name="proceedToCheckout"/>
           <include name="createObject"/>
@@ -19,6 +20,7 @@
     <classes>
       <class name="testclasses.CheckoutTest">
         <methods>
+          <include name="verifyOrderConfirm"/>
           <include name="initBrowser"/>
           <include name="proceedToCheckout"/>
           <include name="createObject"/>

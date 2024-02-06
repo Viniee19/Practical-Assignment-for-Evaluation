@@ -24,6 +24,11 @@
       </methods>
       </class>
      <class name="testclasses.WishListTest"/> 
+     <class name="testclasses.CartTest">
+      <methods>     
+       <exclude name="validateTitleofPage"></exclude>    
+      </methods>
+      </class>
       <class name="testclasses.CheckoutTest">
 	<methods>     
        <exclude name="validateTitleofPage"></exclude>    
@@ -54,6 +59,11 @@
       </methods>
       </class>
      <class name="testclasses.WishListTest"/> 
+     <class name="testclasses.CartTest">
+      <methods>     
+       <exclude name="validateTitleofPage"></exclude>    
+      </methods>
+      </class>
       <class name="testclasses.CheckoutTest">
 	<methods>     
        <exclude name="validateTitleofPage"></exclude>    

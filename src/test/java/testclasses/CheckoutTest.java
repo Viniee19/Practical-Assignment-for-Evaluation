@@ -1,7 +1,10 @@
 package testclasses;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import extentlisteners.TestNGListeners;
@@ -25,6 +28,14 @@ public class CheckoutTest extends TestNGListeners{
 	public void VerifyPaymentSummery() throws IOException {
 		CheckoutPage cp =new CheckoutPage(driver);
 		cp.verifyProductNameAndPrice();;		
+	}
+	
+	@Test(priority=4,groups="Scenario2")
+	public void verifyOrderConfirm() throws IOException {
+		CheckoutPage cp =new CheckoutPage(driver);
+		boolean check = cp.confirmOrder();	
+		Assert.assertEquals(check, true);
+		System.out.println("Your order has been successfully processed!");
 	}
 	
 	
