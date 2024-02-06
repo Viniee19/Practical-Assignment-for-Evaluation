@@ -26,7 +26,13 @@ public class CheckoutPage {
 	@FindBy(xpath = "//*[@onclick='PaymentMethod.save()']")
 	private WebElement continue_4 ; 
 	@FindBy(xpath = "//*[@onclick='PaymentInfo.save()']")
-	private WebElement continue_5 ; 
+	private WebElement continue_5 ; 	
+	@FindBy(xpath = "//*[@class='cart-item-row']//*[text()='Blue and green Sneaker']")
+	private WebElement itemNameOnCheckoutPage;	
+	@FindBy(xpath = "//*[@class='product-unit-price']")
+	private WebElement itemPriceOnCheckoutPage;	
+	@FindBy(xpath = "//*[@class='product-subtotal']")
+	private WebElement itemTotalAmtOnCheckoutPage;	
 	@FindBy(xpath = "//*[@onclick='ConfirmOrder.save()']")
 	private WebElement confirmButton ; 
 	@FindBy(xpath = "//*[text()='Your order has been successfully processed!']")
@@ -55,8 +61,14 @@ public class CheckoutPage {
 	}
 	
 	public void verifyProductNameAndPrice() {
-		
+	int quantity=Integer.parseInt(CartPage.qtyBox.getAttribute("value"));
+	int subTotalAmount=Integer.parseInt(itemPriceOnCheckoutPage.getText())*quantity;
+
+
+	if(CartPage.itemNameOnCartPage.equals(itemNameOnCheckoutPage)&&CartPage.itemPriceOnCartPage.equals(itemPriceOnCheckoutPage)) {
+		System.out.println("Item name is : " +itemNameOnCheckoutPage+" and "+"Actual Price is : "+itemPriceOnCheckoutPage);
 	}
+   	}
 	
     public boolean confirmOrder() {
 		wait =new ExplicitWait();

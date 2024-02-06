@@ -15,6 +15,7 @@ public class CartPage {
 	
 	private static WebDriver driver;
 	private ExplicitWait wait;
+	
 
 	@FindBy(xpath = "//*[@id='checkout']")
 	private WebElement checkoutButton;
@@ -23,11 +24,20 @@ public class CartPage {
 	private WebElement checkbox;
 	
 	@FindBy(xpath = "//*[contains(@name,'itemquantity')]")
-	private WebElement qtyBox;
+	public static WebElement qtyBox;
 	
 	@FindBy(xpath = "//*[@name='updatecart']")
 	private WebElement updateCartButton;
 	
+	@FindBy(xpath = "//*[@class='cart-item-row']//*[text()='Blue and green Sneaker']")
+	public static WebElement itemNameOnCartPage;
+	
+	@FindBy(xpath = "//*[@class='product-unit-price']")
+	public static WebElement itemPriceOnCartPage;
+	
+	@FindBy(xpath = "//*[@class='product-subtotal']")
+	public static WebElement itemTotalAmtOnCartPage;
+
 	public CartPage(WebDriver driver) {
 		this.driver= driver;
 		PageFactory.initElements(driver, this);

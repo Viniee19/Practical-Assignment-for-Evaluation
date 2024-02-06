@@ -62,14 +62,24 @@ public class BaseClassDemo {
 	Thread.sleep(1000);
 	driver.findElement(By.xpath("//*[@href='/wishlist']")).click();// click wishlist link
 	Thread.sleep(1000);
-	driver.findElement(By.xpath("//*[@type='checkbox' and @name='addtocart']")).click();// WLto add to cart chechbox
-	driver.findElement(By.xpath("//*[@type='submit' and @name='addtocartbutton']")).click(); //clicking add to cart button
-	Thread.sleep(1000);
-	String qty ="5";
+	String itemName=driver.findElement(By.xpath("//*[@class='cart-item-row']//*[text()='Blue and green Sneaker']")).getText();
+	System.out.println("Item name is : "+itemName);
+	String defaultQty=driver.findElement(By.xpath("//*[contains(@name,'itemquantity')]")).getAttribute("value");
+	System.out.println("Default quantity is : "+defaultQty);
+	String price=driver.findElement(By.xpath("//*[@class='product-unit-price']")).getText();
+	System.out.println("Actual Price is : "+price);
+	String total=driver.findElement(By.xpath("//*[@class='product-subtotal']")).getText();
+	System.out.println("Subtotal is : "+total);
+
+	String qty ="5";	
 	String amount ="";
 	WebElement qtybox=driver.findElement(By.xpath("//*[contains(@name,'itemquantity')]"));
 	qtybox.clear();
 	qtybox.sendKeys(qty);
+	driver.findElement(By.xpath("//*[@type='checkbox' and @name='addtocart']")).click();// WLto add to cart chechbox
+	driver.findElement(By.xpath("//*[@type='submit' and @name='addtocartbutton']")).click(); //clicking add to cart button
+	Thread.sleep(1000);
+	
 	
 	
 
