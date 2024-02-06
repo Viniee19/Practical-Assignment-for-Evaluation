@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test name="ChromeTest">
+	<parameter name="browser" value="Chrome"></parameter>
+      <!-- <groups>
+		  <run>
+			 <include name="Scenario2"></include> 
+		  </run>
+	  </groups>-->
+    <classes>
+      <class name="testclasses.LoginTest"/>
+       <class name="testclasses.HomeTest">
+       <methods>     
+       <include name="clickingOnAPPARELandSHOES"></include>
+        <include name="verifyTopmenuAndSidemenu"></include>
+      </methods> 
+      </class> 
+    <class name="testclasses.ProductListTest"/>  
+      <class name="testclasses.ProductTest">
+      <methods>     
+       <include name="ChooseGreenColor"></include>
+       <include name="verifyWishList"></include>       
+      </methods>
+      </class>
+     <class name="testclasses.WishListTest"/> 
+      <class name="testclasses.CheckoutTest">
+	<methods>     
+       <exclude name="validateTitleofPage"></exclude>    
+      </methods>
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="FirefoxTest">
+	<parameter name="browser" value="Firefox"></parameter>
+      <!-- <groups>
+		  <run>
+			 <include name="Scenario2"></include> 
+		  </run>
+	  </groups>-->
+    <classes>
+      <class name="testclasses.LoginTest"/>
+       <class name="testclasses.HomeTest">
+       <methods>     
+       <include name="clickingOnAPPARELandSHOES"></include>
+      </methods> 
+      </class> 
+    <class name="testclasses.ProductListTest"/>  
+      <class name="testclasses.ProductTest">
+      <methods>     
+       <include name="ChooseGreenColor"></include>
+       <include name="verifyWishList"></include>       
+      </methods>
+      </class>
+     <class name="testclasses.WishListTest"/> 
+      <class name="testclasses.CheckoutTest">
+	<methods>     
+       <exclude name="validateTitleofPage"></exclude>    
+      </methods>
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
