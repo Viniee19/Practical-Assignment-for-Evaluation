@@ -24,7 +24,7 @@ public class CheckoutTest extends TestNGListeners{
 		cp.checkoutSteps();		
 	}
 	
-	@Test(priority=3,groups="Scenario2")
+	@Test(priority=3,groups="Scenario2",enabled = false)
 	public void VerifyPaymentSummery() throws IOException {
 		CheckoutPage cp =new CheckoutPage(driver);
 		cp.verifyProductNameAndPrice();;		

@@ -6,9 +6,8 @@
     <classes>
       <class name="testclasses.CheckoutTest">
         <methods>
-          <include name="verifyOrderConfirm"/>
           <include name="initBrowser"/>
-          <include name="proceedToCheckout"/>
+          <include name="VerifyPaymentSummery"/>
           <include name="createObject"/>
           <include name="tearDown"/>
         </methods>
@@ -20,10 +19,9 @@
     <classes>
       <class name="testclasses.CheckoutTest">
         <methods>
-          <include name="verifyOrderConfirm"/>
           <include name="initBrowser"/>
-          <include name="proceedToCheckout"/>
           <include name="createObject"/>
+          <include name="VerifyPaymentSummery"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testclasses.CheckoutTest -->

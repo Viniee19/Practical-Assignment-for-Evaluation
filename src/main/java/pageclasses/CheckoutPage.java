@@ -63,7 +63,7 @@ public class CheckoutPage {
 	public void verifyProductNameAndPrice() {
 	int quantity=Integer.parseInt(CartPage.qtyBox.getAttribute("value"));
 	int subTotalAmount=Integer.parseInt(itemPriceOnCheckoutPage.getText())*quantity;
-
+    System.out.println(subTotalAmount);
 
 	if(CartPage.itemNameOnCartPage.equals(itemNameOnCheckoutPage)&&CartPage.itemPriceOnCartPage.equals(itemPriceOnCheckoutPage)) {
 		System.out.println("Item name is : " +itemNameOnCheckoutPage+" and "+"Actual Price is : "+itemPriceOnCheckoutPage);
