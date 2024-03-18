@@ -9,7 +9,8 @@ static	ExtentReports extent;
 	
 	public static ExtentReports extentReportGenerator()
 	{
-		String path = System.getProperty("user.dir")+"\\reports\\EcommerceReport.html";
+		String path = System.getProperty("user.dir")+"\\test-output\\DemoExtentReport.html";
+		
 		
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(path);
 		

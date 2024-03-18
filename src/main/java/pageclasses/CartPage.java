@@ -15,6 +15,7 @@ public class CartPage {
 	
 	private static WebDriver driver;
 	private ExplicitWait wait;
+	String qty="5";
 	
 
 	@FindBy(xpath = "//*[@id='checkout']")
@@ -63,7 +64,7 @@ public class CartPage {
 		wait =new ExplicitWait();
 		wait.waitForVisibility(driver,qtyBox, 10);
 		qtyBox.clear();
-		qtyBox.sendKeys("5");
+		qtyBox.sendKeys(qty);
 		updateCartButton.click();
 	}
 	

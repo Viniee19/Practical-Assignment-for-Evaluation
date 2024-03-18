@@ -24,10 +24,13 @@ public class CheckoutTest extends TestNGListeners{
 		cp.checkoutSteps();		
 	}
 	
-	@Test(priority=3,groups="Scenario2",enabled = false)
+	@Test(priority=3,groups="Scenario2")
 	public void VerifyPaymentSummery() throws IOException {
 		CheckoutPage cp =new CheckoutPage(driver);
-		cp.verifyProductNameAndPrice();;		
+		boolean status=cp.verifyProductNameAndPrice();	
+		Assert.assertEquals(status, true);
+		System.out.println("Verified successfully the product name and its price");
+
 	}
 	
 	@Test(priority=4,groups="Scenario2")

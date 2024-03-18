@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -70,15 +71,67 @@ public class BaseClassDemo {
 	System.out.println("Actual Price is : "+price);
 	String total=driver.findElement(By.xpath("//*[@class='product-subtotal']")).getText();
 	System.out.println("Subtotal is : "+total);
-
 	String qty ="5";	
-	String amount ="";
 	WebElement qtybox=driver.findElement(By.xpath("//*[contains(@name,'itemquantity')]"));
 	qtybox.clear();
 	qtybox.sendKeys(qty);
-	driver.findElement(By.xpath("//*[@type='checkbox' and @name='addtocart']")).click();// WLto add to cart chechbox
+	driver.findElement(By.xpath("//*[@name='updatecart']")).click();
+	driver.findElement(By.xpath("//*[@type='checkbox' and @name='addtocart']")).click();// WLto add to cart chechbox	
 	driver.findElement(By.xpath("//*[@type='submit' and @name='addtocartbutton']")).click(); //clicking add to cart button
 	Thread.sleep(1000);
+	driver.findElement(By.xpath("//*[@name='termsofservice']")).click(); //clicking checkbox of T&C Button 
+	driver.findElement(By.xpath("//*[@id='checkout']")).click(); //clicking checkout Button 
+	driver.findElement(By.xpath("//*[@id='billing-address-select']")).sendKeys("test test1, Vienna street, Vienna 1234, Austria"); //clicking checkout Button 
+	driver.findElement(By.xpath("//*[@onclick='Billing.save()']")).click(); //Continue button
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//*[@onclick='Shipping.save()']")).click(); //Continue button
+	Thread.sleep(1000);
+//	driver.findElement(By.xpath("//*[@id='shipping-buttons-container']//*[@title='Continue']")).click(); //Continue button
+	driver.findElement(By.xpath("//*[@onclick='ShippingMethod.save()']")).click(); //ShippingMethod CONTINUE
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//*[@onclick='PaymentMethod.save()']")).click(); //Payment METHOD CONTINUE
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//*[@onclick='PaymentInfo.save()']")).click(); //PaymentInfo button
+	Thread.sleep(5000);
+	String itemNameonCKout=driver.findElement(By.xpath("//*[@class='cart-item-row']//*[text()='Blue and green Sneaker']")).getText();
+	System.out.println("Item name is : "+itemNameonCKout);
+	String qtyonCKout=driver.findElement(By.xpath("//*[@class='qty nobr']")).getText();
+	System.out.println("updated qty is : "+qtyonCKout);
+	String priceonCKout=driver.findElement(By.xpath("//*[@class='product-unit-price']")).getText();
+	System.out.println("Actual Price is : "+priceonCKout);
+	String totalonCKout=driver.findElement(By.xpath("(//*[@class='nobr']//*[@class='product-price'])[1]")).getText();
+	System.out.println("Subtotal is : "+totalonCKout);
+//	//*[@class='product-price order-total']	
+	String shipping=driver.findElement(By.xpath("(//*[@class='nobr']//*[@class='product-price'])[2]")).getText();
+	String paymentMethodAdditionalFee =driver.findElement(By.xpath("(//*[@class='nobr']//*[@class='product-price'])[3]")).getText();
+	String tax=driver.findElement(By.xpath("(//*[@class='nobr']//*[@class='product-price'])[4]")).getText();
+	String actualTotalAmount=driver.findElement(By.xpath("//*[@class='product-price order-total']")).getText();
+	System.out.println("Actual total amount is : "+actualTotalAmount);
+
+	if(itemName.equals(itemNameonCKout)&&price.equals(priceonCKout)) {
+		double expectedAmount = Double.parseDouble(qty)*Double.parseDouble(price);
+		if(Double.parseDouble(totalonCKout)==expectedAmount) { //verification of sub-total
+			double expectedTotalAmount= Double.parseDouble(totalonCKout)+Double.parseDouble(shipping)+Double.parseDouble(paymentMethodAdditionalFee)+Double.parseDouble(tax);
+			if(Integer.parseInt(actualTotalAmount)==(expectedAmount)) {
+				System.out.println("Product Name : "+itemName);
+				System.out.println("Product Price : "+price);
+				System.out.println("Product Quantity : "+price);
+				System.out.println("Sub-total Amount : "+totalonCKout);
+				System.out.println("Total Amount including all other charges: "+actualTotalAmount);
+			}
+		}
+	}
+	
+	driver.findElement(By.xpath("//*[@onclick='ConfirmOrder.save()']")).click(); //Confirm BUTTON
+	Thread.sleep(1000);
+	driver.findElement(By.xpath("//*[text()='Your order has been successfully processed!']")).click(); //order confirm content
+	Thread.sleep(1000);
+
+	driver.findElement(By.xpath("//*[text()='Log out']")).click(); //LOGOUT LINK
+
+
+
+
 	
 	
 	

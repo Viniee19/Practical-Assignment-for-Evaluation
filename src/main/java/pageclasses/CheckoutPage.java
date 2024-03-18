@@ -33,7 +33,15 @@ public class CheckoutPage {
 	private WebElement itemPriceOnCheckoutPage;	
 	@FindBy(xpath = "//*[@class='product-subtotal']")
 	private WebElement itemTotalAmtOnCheckoutPage;	
-	@FindBy(xpath = "//*[@onclick='ConfirmOrder.save()']")
+	@FindBy(xpath = "(//*[@class='nobr']//*[@class='product-price'])[2]")
+	private WebElement shipping;
+	@FindBy(xpath = "(//*[@class='nobr']//*[@class='product-price'])[3]")
+	private WebElement paymentMethodAdditionalFee;
+	@FindBy(xpath = "(//*[@class='nobr']//*[@class='product-price'])[4]")
+	private WebElement tax;	
+	@FindBy(xpath = "//*[@class='product-price order-total']")		
+	private WebElement actualTotalAmount; 
+	@FindBy(xpath = "//*[@onclick='ConfirmOrder.save()']")		
 	private WebElement confirmButton ; 
 	@FindBy(xpath = "//*[text()='Your order has been successfully processed!']")
 	private WebElement orderConfirmedContent ;
@@ -60,14 +68,34 @@ public class CheckoutPage {
 		continue_5.click();	
 	}
 	
-	public void verifyProductNameAndPrice() {
-	int quantity=Integer.parseInt(CartPage.qtyBox.getAttribute("value"));
-	int subTotalAmount=Integer.parseInt(itemPriceOnCheckoutPage.getText())*quantity;
-    System.out.println(subTotalAmount);
-
-	if(CartPage.itemNameOnCartPage.equals(itemNameOnCheckoutPage)&&CartPage.itemPriceOnCartPage.equals(itemPriceOnCheckoutPage)) {
-		System.out.println("Item name is : " +itemNameOnCheckoutPage+" and "+"Actual Price is : "+itemPriceOnCheckoutPage);
-	}
+	public boolean verifyProductNameAndPrice() {
+		wait =new ExplicitWait();
+		wait.waitForVisibility(driver, itemTotalAmtOnCheckoutPage, 20);
+		boolean result=true;
+		if(CartPage.itemNameOnCartPage.getText().equals(itemNameOnCheckoutPage.getText())&&(CartPage.itemPriceOnCartPage.getText().
+				equals(itemPriceOnCheckoutPage.getText()))) {//verification of product name
+			CartPage quantity=new CartPage(driver);
+			double expectedAmount = Double.parseDouble(quantity.qty)*Double.parseDouble(CartPage.itemPriceOnCartPage.getText());//sub-total calculation
+			if(Double.parseDouble(itemTotalAmtOnCheckoutPage.getText())==expectedAmount) { //verification of sub-total
+				double expectedTotalAmount= Double.parseDouble(itemTotalAmtOnCheckoutPage.getText())+Double.parseDouble(shipping.getText())+
+						Double.parseDouble(paymentMethodAdditionalFee.getText())+Double.parseDouble(tax.getText());// total amount calculation
+				if(Double.parseDouble(actualTotalAmount.getText())==(expectedTotalAmount)) { //verification of total amount
+					System.out.println("Product Name : "+ CartPage.itemNameOnCartPage.getText());
+					System.out.println("Product Price : "+quantity.qty);
+					System.out.println("Product Quantity : "+CartPage.itemPriceOnCartPage.getText());
+					System.out.println("Sub-total Amount : "+itemTotalAmtOnCheckoutPage.getText());
+					System.out.println("Total Amount including all other charges: "+actualTotalAmount.getText());
+				}else {
+					result=false;
+				}
+			}else {
+				result=false;
+			}
+		}
+		else {
+			result=false;
+		}
+		return result;
    	}
 	
     public boolean confirmOrder() {
