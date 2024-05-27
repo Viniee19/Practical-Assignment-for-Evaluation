@@ -32,6 +32,10 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public String getTitleOfPage() {
+		String titleofpage= driver.getTitle();	
+		return titleofpage;
+	}
 	public void clickLoginLink() {
 		wait =new ExplicitWait();
 		wait.waitForVisibility(driver, loginlink, 10);
@@ -48,12 +52,6 @@ public class LoginPage {
 	public void clickLoginButton() {
 		loginbutton.click();	
 	}
-
-	public String getTitleOfPage() {
-		String titleofpage= driver.getTitle();	
-		return titleofpage;
-	}
-	
 	
 
 }

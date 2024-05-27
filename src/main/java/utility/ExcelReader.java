@@ -18,11 +18,7 @@ public class ExcelReader {
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sh1 = wb.getSheetAt(sheetNo);
 		DataFormatter df = new DataFormatter();		
-		String value = df.formatCellValue(sh1.getRow(row).getCell(column));		
-//		int numberofrows = sh1.getLastRowNum();	
-//		System.out.println("total number of row are :"+numberofrows);				
-//		int totalcolumncount = sh1.getRow(0).getLastCellNum();		
-//		System.out.println("Total number of column are :"+totalcolumncount);				
+		String value = df.formatCellValue(sh1.getRow(row).getCell(column));					
 		return value;
 		
 		

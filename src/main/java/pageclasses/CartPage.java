@@ -55,11 +55,6 @@ public class CartPage {
 		checkoutButton.click();	
 	}
 
-	public String getTitleOfPage() {
-		String titleofpage= driver.getTitle();
-		return titleofpage;
-	}
-	
 	public void enterQty() {
 		wait =new ExplicitWait();
 		wait.waitForVisibility(driver,qtyBox, 10);

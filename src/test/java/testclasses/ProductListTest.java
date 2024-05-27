@@ -7,7 +7,7 @@ import pageclasses.ProductListPage;
 
 public class ProductListTest extends TestNGListeners{
 	
-	@Test (priority=1,groups="Scenario2")
+	@Test (priority=1)
 	public void howeringOnBlueandGreenSneaker() throws InterruptedException {
 		ProductListPage.howerproductandClick();
 }

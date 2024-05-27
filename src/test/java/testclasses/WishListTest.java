@@ -7,7 +7,7 @@ import pageclasses.WishListPage;
 
 public class WishListTest extends TestNGListeners  {
 	
-	@Test (priority=1,groups="Scenario2")
+	@Test (priority=1)
 	public void verifyProductAddedtoCartFromWL() {
 	WishListPage wlp= new WishListPage(driver);
 	wlp.wishlistToCart();
